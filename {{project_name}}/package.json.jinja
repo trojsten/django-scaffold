@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "watch": "concurrently \"tailwindcss -i {{project_name}}/styles/src/app.css -o {{project_name}}/styles/static/app.css --watch\" \"node {{project_name}}/styles/src/build.mjs watch\"",
+    "build": "tailwindcss -i {{project_name}}/styles/src/app.css -o {{project_name}}/styles/static/app.css --minify && node {{project_name}}/styles/src/build.mjs"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify/tailwind4": "^1.0.6",
+    "@tailwindcss/cli": "^4.1.7",
+    "concurrently": "^9.1.2",
+    "daisyui": "^5.0.38",
+    "esbuild": "^0.25.5",
+    "esbuild-plugin-stimulus": "^0.1.5",
+    "htmx.org": "2.0.4",
+    "stimulus-use": "^0.52.3",
+    "tailwindcss": "^4.1.7"
+  }
+}

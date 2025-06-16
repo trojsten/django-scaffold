@@ -1,0 +1,7 @@
+project_name:
+  type: str
+  help: What is the Django project name?
+
+include_trojsten:
+  type: bool
+  help: Include Trojsten specific stuff (CSS theme, OIDC setup)
