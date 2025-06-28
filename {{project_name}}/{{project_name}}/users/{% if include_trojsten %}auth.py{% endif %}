@@ -9,10 +9,10 @@ def logout_url(request):
 
 class TrojstenID(OIDCAuthenticationBackend):
     def filter_users_by_claims(self, claims):
-        id = claims.get("sub")
-        if not id:
+        uid = claims.get("sub")
+        if not uid:
             return User.objects.none()
-        return User.objects.filter(trojsten_id=id)
+        return User.objects.filter(trojsten_id=uid)
 
     def create_user(self, claims):
         user = User()
