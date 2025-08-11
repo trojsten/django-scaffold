@@ -18,7 +18,7 @@
       {{ '{% if user.is_authenticated %}' }}
         <span class="sm:ml-auto">{{ '{{ user.get_full_name }}' }}</span>
         <form action="{% if include_trojsten %}{{ "{% url 'oidc_logout' %}" }}{% else %}{{ "{% url 'logout' %}" }}{% endif %}" method="post">
-          {% csrf_token %}
+          {{ '{% csrf_token %}' }}
           <button type="submit" class="hover:underline hover:text-error">Odhlásiť sa</button>
         </form>
       {{ '{% else %}' }}
