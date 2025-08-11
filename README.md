@@ -41,8 +41,7 @@ pripojenia k DB pred štartom
 
 ### Frontend
 
-- [TailwindCSS](https://tailwindcss.com/) a [daisyUI](https://daisyui.com/) na
-  frontend štýl
+- [TailwindCSS](https://tailwindcss.com/) na frontend štýl
 - [htmx](https://htmx.org/)
   (+[django-htmx](https://django-htmx.readthedocs.io/en/latest/))
   pre "AJAX-style" interaktívne elementy
@@ -68,7 +67,7 @@ Tiež je možnosť si pri vytváraní projektu zvoliť aj Trojsten súčasti:
 
 - [mozilla-django-oidc](https://pypi.org/project/mozilla-django-oidc/)
   nakonfigurované pre Trojsten ID prihlásenie
-- Trojsten daisyUI téma
+- Trojsten primary color
 
 ## Odporúčania
 
@@ -134,7 +133,8 @@ Doplňujúce čítanie:
 - [typst](https://pypi.org/project/typst/) na generovanie PDF dokumentov pomocou
   Typstu
 - [markdown](https://pypi.org/project/markdown/) na renderovanie markdownu do HTML
-- [django-ninja](https://pypi.org/project/django-ninja/) na implementáciu REST API
+- [djangorestframework](https://django-rest-framework.org) na implementáciu REST
+  API
 - [django-qr-code](https://pypi.org/project/django-qr-code/) na renderovanie QR kódov
 - [pillow](https://pillow.readthedocs.io/en/stable/) na manipuláciu s obrázkami
 - [pygments](https://pypi.org/project/Pygments/) na syntax highlighting kódu

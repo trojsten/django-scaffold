@@ -1,8 +1,5 @@
 {% if form.non_field_errors %}
-  <div class="alert alert-error mt-4">
-    <span class="icon-[mdi--error] size-5"></span>
-    <div>
-      {% for err in form.non_field_errors %}<p>{{ err }}</p>{% endfor %}
-    </div>
+  <div class="text-error">
+    {% for err in form.non_field_errors %}<p>{{ err }}</p>{% endfor %}
   </div>
 {% endif %}
