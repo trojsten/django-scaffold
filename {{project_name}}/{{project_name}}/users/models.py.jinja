@@ -4,6 +4,6 @@ from django.db import models
 
 class User(AbstractUser):
     id: int
-    {% if include_trojsten -%}
+    {%- if include_trojsten %}
     trojsten_id = models.CharField(max_length=256)
-    {%- endif %}
+    {%- endif -%}

@@ -15,7 +15,7 @@ dependencies = [
     "gunicorn>=23.0.0",
     "psycopg[binary]>=3.2.9",
     "sentry-sdk>=2.29.1",
-    {% if include_trojsten -%}
+    {%- if include_trojsten %}
     "mozilla-django-oidc>=4.0.1",
     {%- endif %}
 ]
