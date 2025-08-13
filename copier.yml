@@ -5,3 +5,11 @@ project_name:
 include_trojsten:
   type: bool
   help: Include Trojsten specific stuff (CSS theme, OIDC setup)
+
+_exclude:
+  - /README.md
+  - copier.yml
+  - ~*
+  - "*.py[co]"
+  - __pycache__
+  - .git
