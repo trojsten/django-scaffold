@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "@iconify/tailwind4";
 @plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   --color-base: var(--color-white);
@@ -39,6 +40,10 @@
   {%- endif %}
 }
 
+.link {
+  @apply text-primary underline hover:text-primary-hover;
+}
+
 .btn {
   @apply px-3 py-1.5 rounded font-bold inline-flex gap-1 items-center cursor-pointer;
 }
@@ -68,23 +73,27 @@
 }
 
 .input {
-    @apply w-full rounded px-3 py-1.5 inline-flex;
+  @apply w-full rounded px-3 py-1.5 inline-flex;
 }
 
 .checkbox {
-    @apply rounded;
+  @apply rounded;
 }
 
 .input:disabled {
-    @apply cursor-not-allowed opacity-50;
+  @apply cursor-not-allowed opacity-50;
 }
 
 .simple-table {
   @apply min-w-full divide-y divide-border;
 }
 
+.simple-table thead {
+  @apply text-left
+}
+
 .simple-table th {
-  @apply whitespace-nowrap pt-0 p-3 text-left text-sm font-semibold;
+  @apply whitespace-nowrap pt-0 p-3 text-sm font-semibold;
 }
 
 .simple-table tbody {

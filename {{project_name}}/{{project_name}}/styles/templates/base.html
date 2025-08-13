@@ -11,12 +11,12 @@
     <link href="{% static 'app.css' %}" rel="stylesheet">
     <script src="{% static 'app.js' %}" defer></script>
   </head>
-  <body class="text-base-content">
+  <body class="text-base-content" hx-headers='{"x-csrftoken": "{{ csrf_token }}"}'>
     {% block body %}
       {% include "base/navbar.html" %}
 
       {% block outer_container %}
-      <div class="mx-auto max-w-6xl w-full p-5">
+      <div class="mx-auto max-w-6xl w-full p-5 pb-12">
         {% block container %}{% endblock %}
       </div>
       {% endblock outer_container %}
