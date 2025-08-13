@@ -13,4 +13,5 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
+      - run: cp .env.example .env
       - uses: pre-commit/action@v3.0.1
