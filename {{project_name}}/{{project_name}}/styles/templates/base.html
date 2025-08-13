@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+{% load static version %}
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -8,8 +8,8 @@
     <title>{% block title %}- Scaffold{% endblock %}</title>
     {% block head %}{% endblock %}
 
-    <link href="{% static 'app.css' %}" rel="stylesheet">
-    <script src="{% static 'app.js' %}" defer></script>
+    <link href="{% static 'app.css' %}?v={% app_version %}" rel="stylesheet">
+    <script src="{% static 'app.js' %}?v={% app_version %}" defer></script>
   </head>
   <body class="text-base-content" hx-headers='{"x-csrftoken": "{{ csrf_token }}"}'>
     {% block body %}

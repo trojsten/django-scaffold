@@ -33,3 +33,23 @@ select = [
   "LOG", # logging
   "PTH", # use pathlib
 ]
+
+[tool.bumpver]
+current_version = "2000.1"
+version_pattern = "YYYY.INC1"
+commit_message = "bump version -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"{{ project_name }}/__init__.py" = [
+    'VERSION = "{version}"',
+]
