@@ -1,7 +1,7 @@
 {% if not include_trojsten -%}
 from django.contrib.auth import views as auth_views
 {%- endif %}
-from django.urls.conf import path{% if include_trojsten %}, include{% endif %}
+from django.urls.conf import {% if include_trojsten %}include, {% endif %}path
 
 urlpatterns = [
     {% if not include_trojsten -%}
